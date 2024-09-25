@@ -310,7 +310,7 @@ export default defineComponent({
       try {
         await axios.delete(`https://jsonplaceholder.typicode.com/posts/${id}`);
         items.value = items.value.filter((item) => item.id !== id);
-alert("silindi")
+        alert("silindi");
       } catch (error) {
         console.error("Silme işlemi sırasında bir hata oluştu:", error);
       }
@@ -364,7 +364,7 @@ alert("silindi")
       }
     };
 
-    const test = (val:any) => {
+    const test = (val: any) => {
       console.log(val);
     };
 
